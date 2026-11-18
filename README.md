@@ -1,60 +1,52 @@
 # Zein Dergham
 
-M.Sc. Data Science student at Lancaster University Leipzig, based in Leipzig, Germany.
-I build systems that run in production, not just notebooks.
+**AI systems for real organizations · Leipzig & Beirut**
 
-Looking for **working-student roles in data science, analytics, ML or data engineering** —
-in the Leipzig area or remote within Germany. English-speaking teams (German A1, learning).
+Data scientist (M.Sc. Data Science, Lancaster University Leipzig, expected Dec 2027).
+In Beirut I took a real-estate and contracting company from paper drawings and phone calls
+to automated listings, AI renders and a client portal, while the grid was down most of the day.
+Now I build the same kind of change for real estate, hospitality, schools, clinics and finance.
 
----
-
-### What I work on
-
-**Applied ML.** Trained a FLUX.1-dev LoRA on a curated 784-image dataset for a
-design-build firm, behind a five-stage pipeline: scraping, vision-language-model
-curation, disentangled captioning, training-config generation, and ControlNet-conditioned
-inference. It runs on the studio's own site, so architects use it on live projects.
-
-**Data pipelines.** ETL across seven job-board APIs with normalisation, cross-source
-deduplication and rule-based filtering, followed by LLM scoring and document generation —
-with a validator that traces every generated line back to a source fact and reverts
-anything unsupported.
-
-**Production products.** Two applications in private beta with backing from their
-investors: a memory-safekeeping app (Expo, Supabase, 546 tests across 50 suites,
-family-scoped row-level security) and a restaurant operations dashboard that turns daily
-multi-branch exports into KPIs and profit-leak alerts.
-
-**Infrastructure.** I run a bare-metal Ubuntu server on a Tailscale mesh, hosting five
-containerised applications through Coolify — including the model gateway that serves my
-own tooling.
+- **Organizations in Lebanon and the region:** [book a free 30-minute AI audit](https://zeindergham.me/)
+- **Teams in Germany:** open to a **Werkstudent role in ML and data, 20 h/week**, Leipzig or remote.
+  No visa sponsorship needed. CV in English and German on [zeindergham.me](https://zeindergham.me/).
 
 ---
 
-### Selected public work
+### Case file: Dergham Design (real estate & contracting, Beirut, 2023 to 2025)
 
-| Project | What it is |
-|---|---|
-| [real-estate-spatial](https://github.com/ZeroTrustZein/real-estate-spatial) | Spatial valuation engine — KD-tree indexing, hedonic ridge regression, ensemble AVM |
-| [multi-modal-financial](https://github.com/ZeroTrustZein/multi-modal-financial) | Financial document RAG — BM25 sparse search, dense vectors, reciprocal rank fusion |
-| [fintech-algorithmic-trading](https://github.com/ZeroTrustZein/fintech-algorithmic-trading) | Quantitative risk engine — multi-method VaR, Monte Carlo, event-driven backtesting |
-| [autonomous-cre-underwriting](https://github.com/ZeroTrustZein/autonomous-cre-underwriting) | Multi-agent real estate diligence platform with MCP servers |
-| [flash-store](https://github.com/ZeroTrustZein/flash-store) | Embedded thread-safe LSM-Tree key-value engine, in Rust |
-| [high-performance-model](https://github.com/ZeroTrustZein/high-performance-model) | Low-latency MCP server for FinTech market telemetry |
+I was the company's whole IT department for two years.
 
-Client and investor-backed work is private. Happy to walk through any of it.
+- **Power-cut proof foundation:** workstations, network and NAS on battery backup, about 4 more working hours a day.
+- **Website and client portal:** [derghamds.com](https://derghamds.com), where clients follow their permit applications instead of calling.
+- **Listings that publish themselves:** a new listing in Sanity fires a webhook, a language model drafts the post and a video is rendered automatically.
+- **AI renders in the studio's own style:** a FLUX.1-dev LoRA trained on 784 of the studio's images, with ControlNet keeping the architect's geometry.
+
+---
+
+### Builds
+
+| Project | What it is | Status |
+|---|---|---|
+| [Hopwire](https://github.com/ZeroTrustZein/hopwire) | Real-time graph anti-money-laundering engine in Rust. 9.2 µs p99 at 376k tx/s on a synthetic benchmark; precision on the public IBM AML set reported openly. | Open source |
+| [pico-gpt](https://github.com/ZeroTrustZein/pico-gpt) | GPT transformer written from scratch in PyTorch, with my own byte-level BPE tokenizer and KV-cache decoding. | Open source |
+| [real-estate-spatial](https://github.com/ZeroTrustZein/real-estate-spatial) | Spatial valuation engine for real estate: KD-tree comps, hedonic ridge regression, ensemble AVM. | Open source |
+| [multi-modal-financial](https://github.com/ZeroTrustZein/multi-modal-financial) | RAG over financial filings: BM25 plus dense vectors with reciprocal rank fusion. | Open source |
+| YomYom | Daily KPIs and leak flags for multi-branch restaurants from the POS exports owners already have. Rules flag, the model only explains. | Private beta |
+| Luka | iOS and Android family archive. Postgres Row Level Security keeps every family's data separate; 546 tests in 50 suites. | Private beta |
+
+Client work is private. Happy to walk through any of it.
 
 ---
 
 ### Stack
 
-**Data & ML** · Python · SQL · PostgreSQL · NumPy · XGBoost · LoRA fine-tuning · diffusion models · ControlNet · RAG evaluation
-**AI engineering** · LLM integration · prompt engineering · structured output · multi-agent orchestration · dataset curation
-**Engineering** · TypeScript · Next.js · React Native (Expo) · Supabase · Django · REST APIs · pytest · Jest
-**Infrastructure** · Linux · Docker · Coolify · Tailscale · SSH · webhooks · job queues
+**ML & data** · Python · SQL · PyTorch · Transformers · FLUX.1 · LoRA · ControlNet · RAG · XGBoost · graph neural networks
+**Engineering** · Rust · TypeScript · Next.js · React Native (Expo) · Supabase · PostgreSQL (RLS) · Django · REST · webhooks
+**Infrastructure** · Linux · Docker · Coolify · Tailscale
+
+**Languages** · Arabic · English · French · German (A2, learning)
 
 ---
 
-### Reach me
-
-[LinkedIn](https://linkedin.com/in/zein-dergham) · z.dergham@lancaster.ac.uk · Leipzig, Germany
+[zeindergham.me](https://zeindergham.me/) · [LinkedIn](https://linkedin.com/in/zein-dergham) · z.dergham@lancaster.ac.uk · Leipzig, Germany
